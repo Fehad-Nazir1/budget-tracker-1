@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap');
+
+:root{
+    --box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+.outer-wrapper{
+    background-color: #F5F7FA;
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 0;
+}
+
+.heading1{
+    font-size: 30px;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.heading2{
+    font-size: 22px;
+    text-align: center;
+    /* padding: 5px 0px; */
+    margin-bottom: 15px;
+}
+
+.transaction-control, .transaction-history {
+    display: flex;
+    gap: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+input{
+    display: block;
+    width: 100%;
+    margin: 15px 0px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 16px;
+}
+
+.add-transaction{
+    display: flex;
+    flex-direction: column;
+}
+
+.add-transaction, .stats, .incomeh, .expenseh{
+    max-width: 550px;
+    min-width: 300px;
+    background-color: white;
+    padding: 40px;
+    flex-grow: 1;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+
+.balance , .income, .expense {
+    padding: 10px 15px;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    margin: 15px 0px;
+    border-radius: 5px;
+}
+
+.balance {
+    background-color: rgb(247, 247, 234);
+    border-right: 12px solid rgb(215, 215, 18);
+}
+
+.income{
+    background-color: rgb(234, 247, 238);
+    border-right: 12px solid rgb(87, 215, 18);
+}
+
+.expense {
+    background-color: rgb(247, 235, 234);
+    border-right: 12px solid rgb(215, 18, 18);
+}
+
+.transaction-history{
+    margin-top: 50px;
+}
+
+.heading3{
+    text-align: center;
+    margin-bottom: 15px;
+    text-decoration: underline solid black 3px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.income-item, .expense-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 18px;
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 15px 0px;
+}
+
+.time{
+    font-size: 10px;
+    color: rgb(60, 59, 59);
+}
+
+.income-item{
+    border-left: 10px solid  rgb(87, 215, 18);
+}
+
+.expense-item{
+    border-left: 10px solid rgb(215, 18, 18);
+}
+
+.amount{
+    margin: 0 10px;
+    font-size: 16px;
+}
+.bi-trash {
+    font-size: 20px;
+}
+
+.tname{
+    font-size: 16px;
+}
+
+.submit-button {
+    background-color: rgb(66, 66, 240);
+    color: white;
+    border: none;
+}
+
+@media(max-width : 400px){
+    .transaction-control, .transaction-history{
+        max-width: 100%;
+        margin: 20px;
+    }
+}
+
+
+.incomeh, .expenseh{ 
+    margin-bottom: 50px;
+}
